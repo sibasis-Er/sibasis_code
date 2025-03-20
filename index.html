@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Webpage Design 2025 | KABIR | 2025</title>
-
-    <!--style CSS-->
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-
-    <!--FontAwesome icons CDN-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 </head>
 <body>
-    <div class="glass">
-        <nav>
-            <h2 class="logo">K||B</h2>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SERVICE</a></li>
-                <li><a href="#">CONTENT</a></li>
-            </ul>
-            <img src="images/profile.jpg" alt="profile">
-        </nav>
-             
-        <div>
-            <h3>it's time to </h3>
-            <h1>TRAVEL</h1>
+    <div class="container">
+        <div class="Calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value = '' " class="operater">
+                    <input type="button" value="DE" onclick= "display.value = display.value.toString().slice" class="operater">
+                    <input type="button" value="." onclick="display.value += '.' " class="operater">
+                    <input type="button" value="/" onclick="display.value += '/' " class="operater">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7' ">
+                    <input type="button" value="8" onclick="display.value += '8' ">
+                    <input type="button" value="9" onclick="display.value += '9' ">
+                    <input type="button" value="*" onclick="display.value += '*' " class="operater">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4' ">
+                    <input type="button" value="5" onclick="display.value += '5' ">
+                    <input type="button" value="6" onclick="display.value += '6' ">
+                    <input type="button" value="-" onclick="display.value += '-' " class="operater">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1' ">
+                    <input type="button" value="2" onclick="display.value += '2' ">
+                    <input type="button" value="3" onclick="display.value += '3' ">
+                    <input type="button" value="+" onclick="display.value += '+' " class="operater">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="display.value += '00' ">
+                    <input type="button" value="0" onclick="display.value += '0' ">
+                    <input type="button" value="=" onclick="display.value = eval(display.value)"class="equal operater">
+                    
+                </div>
+            </form>
         </div>
-<div class="icons">
-    <ul>
-        <li><i class="fab fa-twitter"></i></li>
-       <li><i class="fab fa-whatsapp"></i></li>
-        <li><i class="fab fa-instagram"></i></li>
-    </ul>
 
-      </div>
     </div>
+    
 </body>
 </html>
